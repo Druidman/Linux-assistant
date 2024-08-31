@@ -10,55 +10,19 @@ When you type command it is being processed by llama3 70b tool-use GROQ llm then
 IN REPO DIRECTORY: `/Linux-assistant`
 
 Make .env file in repo directory:
-![Screenshot](/images/env-file.png)
+![Screenshot](/images/env_file.png)
 
 Install dependencies: `pip3 install -r requirements.txt`
 
 Run: `python3 run.py`
 
-# .ENV info:
-// If you want multiline use: \ on end of line. // 
+# `sys_prompt_vars.py` info: 
+This file is stored in: `/app/prompts/sys_prompt_vars.py`.
+Used to store NOT REQUIRED additional variables.
+This variables will be added to the assistant system prompt.
 
+My example configured variables:
+![Screenshot](/images/myvars.png)
 
-
-## COMMON_APPS 
-
-HELPS A TON 
-
-### FORMAT
-`<Number>. name (what is it) launch name: (what command is used to launch this app), \`
-
-Example:
-1. vivaldi (web browser) launch name: vivaldi, \
-
-## COMMON_WEBSITES 
-
-Does a lot if you use web browser often
-
-### FORMAT
-`<Number>. website name, \`
-
-Example:
-1. YouTube, \
-
-## SYSTEM_DATA 
-
-Does something about 10% increase in performance
-
-### FORMAT
-
-`<Number>. (what): (what is it), \`
-Example:
-1. distro: arch, \
-
-## USER_DATA 
-
-Does almost nothing about 5% increase in performance
-
-### FORMAT
-
-`<Number>. (smth about u)`
-
-Example:
-1. Hates ai, \
+You can configure this vars as you like but if you add new one it won't be added to system prompt.
 
